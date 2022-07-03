@@ -18,7 +18,7 @@ export default function InputBadge({ badge }: Props) {
   return (
     <TouchableOpacity style={[styles.container, badgeStyle]} onPress={onPress}>
       <Text style={styles.text}>{textExtractor(badge)}</Text>
-      <Text style={styles.x}>x</Text>
+      {/*<Text style={styles.x}>x</Text>*/}
     </TouchableOpacity>
   )
 }
