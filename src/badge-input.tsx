@@ -93,8 +93,8 @@ export let BadgeInput = ({
         keyExtractor,
       }}
     >
-      <TouchableWithoutFeedback onPress={onPress} style={style}>
-        <View style={styles.container}>
+      <TouchableWithoutFeedback onPress={onPress}>
+        <View style={[styles.container, style]}>
           <View style={styles.contentContainer}>
             {shouldRenderPlaceholder && renderPlaceholder()}
             {renderBadges()}
